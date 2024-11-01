@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlaFen a 2D Array</title>
+  </head>
+  <body>
+    <script>
+      function flatten(arr) {
+        const flattenedArray = [];
+        for (const subArray of arr) {
+          for (const element of subArray) {
+            flattenedArray.push(element);
+          }
+        }
+        return flattenedArray;
+      }
+
+      console.log(
+        flatten([
+          [1, 2],
+          [3, 4],
+        ])
+      );
+    </script>
+  </body>
+</html>

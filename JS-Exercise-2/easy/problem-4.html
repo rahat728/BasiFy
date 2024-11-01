@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count Occurrences (1D Array)</title>
+  </head>
+  <body>
+    <script>
+      function countOccurrences(arr) {
+        const occurrences = {};
+        for (const item of arr) {
+          occurrences[item] = (occurrences[item] || 0) + 1;
+        }
+        return occurrences;
+      }
+
+      console.log(countOccurrences(["apple", "banana", "apple"]));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication Table (2D Array)</title>
+  </head>
+  <body>
+    <script>
+      function multiplicationTable(n) {
+        const table = [];
+        for (let i = 1; i <= n; i++) {
+          const row = [];
+          for (let j = 1; j <= n; j++) {
+            row.push(i * j);
+          }
+          table.push(row);
+        }
+        return table;
+      }
+      console.log(multiplicationTable(3));
+    </script>
+  </body>
+</html>
